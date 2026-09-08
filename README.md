@@ -1,36 +1,55 @@
-# Netflix TV Shows Data Analysis with Python
+# 🎬 Netflix TV Shows Data Analysis & Power BI Dashboard
 
 ## 📌 Project Overview
 
-This project analyzes a dataset of Netflix TV Shows using Python to discover trends, patterns, and insights related to TV show releases, countries, languages, ratings, popularity, votes, and duration.
+This project is an end-to-end analysis of a Netflix TV Shows dataset using **Python and Power BI**.
 
-The project focuses on data cleaning, exploratory data analysis (EDA), feature engineering, statistical analysis, and data visualization.
+The project combines **data cleaning, exploratory data analysis (EDA), feature engineering, statistical analysis, data visualization, and interactive dashboard development** to uncover meaningful insights about Netflix TV Shows.
 
-## 🎯 Objectives
+The Python analysis focuses on preparing and exploring the dataset, while the Power BI dashboard presents the findings through interactive KPIs, charts, and slicers.
 
-* Analyze the Netflix TV Shows dataset
-* Clean and prepare the data for analysis
-* Explore TV show release trends
+---
+
+## 🎯 Project Objectives
+
+* Analyze Netflix TV Shows data
+* Clean and prepare raw data for analysis
+* Analyze TV Show release trends over time
 * Identify the top countries producing TV Shows
 * Analyze the most common languages
 * Understand rating distribution
-* Analyze show popularity and vote counts
-* Explore TV show duration and number of seasons
-* Identify relationships between numerical variables
-* Create meaningful visualizations and insights
+* Analyze popularity and vote counts
+* Explore the number of seasons
+* Analyze relationships between numerical variables
+* Build an interactive Power BI dashboard
+* Present data-driven insights in a clear and visual format
+
+---
 
 ## 🛠️ Technologies Used
 
-* Python
+### Python
+
 * Pandas
 * NumPy
 * Matplotlib
 * Seaborn
 * Jupyter Notebook
 
+### Business Intelligence
+
+* Microsoft Power BI
+* Power Query
+* DAX
+* Interactive Slicers
+* KPI Cards
+* Data Visualization
+
+---
+
 ## 📊 Dataset
 
-The dataset contains approximately 16,000 Netflix TV Show records with information such as:
+The dataset contains approximately **16,000 Netflix TV Show records** with information including:
 
 * Show ID
 * Title
@@ -45,19 +64,24 @@ The dataset contains approximately 16,000 Netflix TV Show records with informati
 * Popularity
 * Vote Count
 
-## 🔍 Analysis Performed
+---
 
-### Data Cleaning
+# 🐍 Python Data Analysis
 
-* Removed duplicate records
-* Converted date columns into datetime format
-* Handled missing values
-* Standardized categorical data
-* Created additional analytical columns
+## 🔍 Data Cleaning
 
-### Feature Engineering
+The Python workflow includes:
 
-Created features including:
+* Removing duplicate records
+* Converting date columns into datetime format
+* Handling missing values
+* Standardizing categorical values
+* Checking data types
+* Preparing the dataset for analysis
+
+## ⚙️ Feature Engineering
+
+Additional analytical features were created, including:
 
 * Added Year
 * Added Month
@@ -66,46 +90,108 @@ Created features including:
 * Duration Number
 * Duration Unit
 
-### Exploratory Data Analysis
+## 📈 Exploratory Data Analysis
 
-The project analyzes:
+The analysis explores:
 
-* TV Shows by release year
-* TV Shows by release decade
+* TV Shows released by year
+* TV Shows released by decade
 * TV Shows added to Netflix by year
 * Top countries producing TV Shows
-* Top languages
+* Most common languages
 * Rating distribution
 * Most popular TV Shows
-* TV Shows with the highest vote counts
+* Shows with the highest vote counts
 * Most common number of seasons
-* Popularity vs Vote Count relationship
+* Relationship between popularity and vote count
 
-## 📈 Visualizations
+## 📊 Python Visualizations
 
-The project uses multiple visualizations including:
+The project uses:
 
 * Line Charts
 * Bar Charts
 * Scatter Plots
+* Distribution Visualizations
 
-These visualizations make it easier to identify trends and patterns within the dataset.
+These visualizations help identify trends, patterns, and relationships within the dataset.
 
-## 💡 Key Insights
+---
 
-The analysis helps identify:
+# 📊 Power BI Interactive Dashboard
 
+A dedicated Power BI dashboard was developed to transform the analysis into an interactive business intelligence report.
+
+## 🔝 KPI Cards
+
+The dashboard includes four key performance indicators:
+
+1. **Total TV Shows**
+2. **Average Popularity**
+3. **Average Vote Count**
+4. **Total Languages**
+
+These KPIs provide a quick overview of the dataset.
+
+---
+
+## 📊 Dashboard Charts
+
+### 1. TV Shows Released by Year
+
+Shows how the number of TV Shows has changed across release years.
+
+### 2. Top 10 Countries
+
+Highlights the countries producing the highest number of TV Shows.
+
+### 3. Top 10 Languages
+
+Shows the most frequently represented languages in the dataset.
+
+### 4. TV Shows by Rating
+
+Displays the distribution of TV Shows across different rating categories.
+
+### 5. Top 10 Most Popular Shows
+
+Highlights TV Shows with the highest popularity scores.
+
+### 6. Most Common Number of Seasons
+
+Shows the most frequently occurring number of seasons among TV Shows.
+
+---
+
+## 🎛️ Interactive Slicers
+
+The dashboard includes interactive filters for:
+
+* **Release Year**
+* **Language**
+* **Rating**
+* **Country**
+
+Users can select different values to dynamically explore the dashboard.
+
+---
+
+# 💡 Key Insights
+
+The project provides insights into:
+
+* TV Show release trends over time
 * Major TV Show producing countries
 * Most common languages
-* Popular rating categories
-* Release trends over time
+* Distribution of rating categories
+* Most popular TV Shows
+* Most common number of seasons
 * Netflix content addition trends
-* Highly popular TV Shows
-* Shows receiving the most votes
-* Common TV Show durations
-* Relationship between popularity and vote count
+* Popularity and vote-count relationships
 
-## 📁 Project Structure
+---
+
+# 📁 Project Structure
 
 ```text
 netflix-tv-shows-data-analysis/
@@ -115,6 +201,9 @@ netflix-tv-shows-data-analysis/
 │
 ├── notebook/
 │   └── Netflix_TV_Shows_Analysis.ipynb
+│
+├── powerbi/
+│   └── Netflix_TV_Shows_Dashboard.pbix
 │
 ├── visuals/
 │   ├── release_trend.png
@@ -128,21 +217,69 @@ netflix-tv-shows-data-analysis/
 └── requirements.txt
 ```
 
-## 🚀 How to Run
+---
 
-1. Clone the repository.
-2. Install the required libraries.
-3. Open the Jupyter Notebook.
-4. Run the notebook cells sequentially.
+# 🚀 How to Run the Python Analysis
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+```
+
+### 2. Install required libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-## 📌 Project Outcome
+### 3. Open Jupyter Notebook
 
-This project demonstrates practical skills in Python-based data analysis, including data cleaning, exploratory data analysis, feature engineering, statistical analysis, and visualization.
+```bash
+jupyter notebook
+```
+
+### 4. Open
+
+```text
+Netflix_TV_Shows_Analysis.ipynb
+```
+
+### 5. Run the notebook cells sequentially.
 
 ---
 
-**Author:** Malik Muhammad Ali Aslam
+# 📊 How to View the Power BI Dashboard
+
+1. Install Microsoft Power BI Desktop.
+2. Open:
+
+```text
+Netflix_TV_Shows_Dashboard.pbix
+```
+
+3. Use the slicers to filter the dashboard.
+4. Interact with the charts to explore different Netflix TV Show trends.
+
+---
+
+# 📌 Project Outcome
+
+This project demonstrates practical experience in:
+
+* Data Cleaning
+* Exploratory Data Analysis
+* Feature Engineering
+* Statistical Analysis
+* Data Visualization
+* Python Data Analysis
+* Power BI Dashboard Development
+* DAX
+* Interactive Data Reporting
+* Data Storytelling
+
+The project showcases an end-to-end workflow from **raw data → Python analysis → insights → interactive Power BI dashboard**.
+
+## 👨‍💻 Author
+**Malik Muhammad Ali Aslam**
+**Skills demonstrated:** Python | Pandas | NumPy | Matplotlib | Seaborn | Power BI | DAX | Data Analysis
